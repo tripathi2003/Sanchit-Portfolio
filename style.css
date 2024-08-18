@@ -1,0 +1,508 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #a9a9b3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #a9a9b3;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #a9a9b3;
+}
+
+.home-icon {
+    font-size: 1.2rem;
+}
+
+.home-icon a {
+    display: inline-block;
+    width: 130px;
+    text-decoration: none;
+    font-weight: 700;
+    padding-top: 6px;
+    color: #a9a9b3;
+}
+
+#myBlinkingText {
+    font-size: 24px;
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-color: green;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #a9a9b3;
+    margin: 6px 0;
+}
+
+#iconn {
+    display: none;
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.whoami {
+    display: flex;
+    justify-content: center;
+    color: #ffd9b3;
+    margin: 0;
+    padding-top: 49px;
+    padding-bottom: 25px;
+    background-color: #1a1a1a;
+    font-family: "Space Mono", monospace;
+    font-size: xxx-large;
+}
+
+#header {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    height: 83vh;
+    color: #ffd9b3;
+    font-family: "Space Mono", monospace;
+}
+
+#mainheader {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    height: 260vh;
+    color: #ffd9b3;
+    font-family: "Space Mono", monospace;
+}
+
+#mainheader>p {
+    padding: 55px 150px 0px 150px;
+    text-align: left;
+    font-weight: 550;
+    font-size: large;
+}
+
+.headerr {
+    display: flex;
+    position: absolute;
+    left: 9rem;
+}
+
+#header>p {
+    padding: 55px 190px 0px 190px;
+    text-align: left;
+    font-weight: 550;
+    font-size: large;
+}
+
+#link {
+    color: #b30059;
+}
+
+#home {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    height: 97vh;
+    color: #ffd9b3;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
+#home .child:nth-child(1) {
+    width: 10%;
+}
+
+#home .child:nth-child(1)>hr {
+    position: relative;
+    rotate: 90deg;
+    top: 52rem;
+    height: 4px;
+    background: #ffd9b3;
+    border-radius: 10px;
+    border: none;
+}
+
+.links {
+    display: inline-grid;
+    position: absolute;
+    left: 72px;
+    top: 40rem;
+}
+
+.links a {
+    color: #ffd9b3;
+    padding-top: 20px;
+}
+
+#home .child:nth-child(2) {
+    width: 90%;
+    color: #ffd9b3;
+    align-self: center;
+    font-family: "Space Mono", monospace
+}
+
+#home .child:nth-child(2)>h1 {
+    font-size: 42px;
+}
+
+#home .child:nth-child(2)>ul {
+    display: flex;
+    padding: 0;
+    font-size: x-large;
+    justify-content: center;
+    font-family: "Space Mono", monospace
+}
+
+#home .child:nth-child(2)>ul li {
+    margin-right: 16px;
+    list-style: none;
+}
+
+#home .child:nth-child(2)>ul li,
+a {
+    text-decoration: none;
+    color: #ffd9b3;
+}
+
+#home .child:nth-child(2)>ul a:hover {
+    color: #b30059;
+    font-size: 35px;
+    transition: font-size 0.45s ease-in-out;
+}
+
+#home .child:nth-child(3) {
+    width: 10%;
+}
+
+#home .child:nth-child(3)>p {
+    color: #ffd9b3;
+    position: relative;
+    rotate: 90deg;
+    top: 33rem;
+    cursor: pointer;
+    font-size: larger;
+    height: 4px;
+    right: -14px;
+}
+
+#home .child:nth-child(3) hr {
+    position: relative;
+    rotate: -90deg;
+    top: 51rem;
+    height: 4px;
+    background: #ffd9b3;
+    border-radius: 10px;
+    border: none;
+}
+
+#fixed {
+    position: fixed;
+    top: 54rem;
+    right: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffd9b3;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    padding-bottom: 4px;
+}
+
+.container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.content {
+    flex-direction: column;
+    flex: 1 auto;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#body {
+    background-color: #1a1a1a;
+}
+
+.post {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    padding: 30px;
+    margin: 20px auto;
+    color: #ffd9b3;
+    background-color: #1a1a1a;
+}
+
+.post-title {
+    font-size: 2.625rem;
+    margin: 0 0 20px;
+}
+
+.post-meta {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#btnonblog {
+    text-align: center;
+    padding: 16px;
+    border-radius: 11px;
+    border: none;
+    background-color: #3b3d42;
+    color: #ffd9b3;
+    position: relative;
+    font-size: large;
+    margin: auto;
+    left: 28vh;
+    align-self: center;
+    cursor: pointer;
+    font-family:  "Space Mono", monospace;
+}
+#btnonblog1 > button{
+    text-align: center;
+    padding: 16px;
+    border-radius: 11px;
+    border: none;
+    background-color: #3b3d42;
+    color: #ffd9b3;
+    position: relative;
+    font-size: large;
+    left: 22vh;
+    margin: 5px;
+    align-self: center;
+    cursor: pointer;
+    font-family:  "Space Mono", monospace;
+}
+
+.container,
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+#resourcemain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 92vh;
+    background-color: #1a1a1a;
+    color: wheat;
+    font-family: "Space Mono", monospace;
+}
+
+#resourcemain div {
+    font-size: x-large;
+    padding: 10px;
+}
+
+#resourcemain div:nth-child(2) {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #header {
+        height: 90vh;
+    }
+
+    #header>p {
+        padding: 15px 10px 0px 10px;
+        text-align: left;
+        font-weight: 550;
+        font-size: smaller;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 34px;
+        width: 100%;
+        left: -16px;
+        background-color: #333;
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+    #iconn {
+        display: inline-block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu li a>i {
+        display: none;
+    }
+
+    #fixed {
+        position: fixed;
+        top: 50rem;
+        right: 20px;
+        cursor: pointer;
+        color: white;
+    }
+
+    #resourcemain {
+
+        height: 104vh;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    .links {
+        left: 18px;
+    }
+
+    #home .child:nth-child(3) hr {
+        top: 794px;
+    }
+
+    #home .child:nth-child(1)>hr {
+        top: 804px;
+    }
+
+    #home .child:nth-child(3)>p {
+        top: 32rem;
+    }
+
+    .links {
+        left: 18px;
+        top: 42rem;
+    }
+
+    .post {
+        width: 93%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .links {
+        left: 31px;
+        top: 41rem;
+    }
+
+    #home .child:nth-child(1)>hr {
+        top: 794px;
+    }
+
+    #home .child:nth-child(3) hr {
+        top: 49rem;
+    }
+
+    #home .child:nth-child(3)>p {
+        top: 31rem;
+    }
+
+    #header {
+        height: 133vh;
+    }
+
+}
+
+@media (max-width: 425px) {
+    #home .child:nth-child(1) {
+        display: none;
+    }
+
+    #home .child:nth-child(3) {
+        display: none;
+    }
+
+    #home .child:nth-child(2)>ul {
+        display: block;
+    }
+
+    #header {
+        height: 100vh;
+        padding: 0;
+        font-size: smaller;
+    }
+
+    .post {
+        width: 87%;
+    }
+
+    #resourcemain {
+        height: 103vh;
+    }
+
+    #resourcemain div {
+        font-size: larger;
+        padding: 10px;
+    }
+    #btnonblog1 > button {
+        
+        font-size: smaller;
+        left: 1vh;
+       
+    }
+    #btnonblog{
+        
+        font-size: smaller;
+        left: 13vh;
+       
+    }
+}
+
+@media (min-width: 1440px) {
+    #home {
+        height: 97vh;
+    }
+
+    .links {
+        left: 68px;
+        top: 37rem;
+    }
+
+
+
+}
