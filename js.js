@@ -19,27 +19,35 @@ let iterations = 0;
 let animationIntervalId = null;
 let restartTimeoutId = null;
 
-function startAnimation() {
-    let animationIntervalId = setInterval(() => {
-        h1Element.innerText = h1Element.innerText.split("").map((letter, index) => {
-            if (index < iterations) {
-                return h1Element.dataset.value[index];
-            }
-            return letters[Math.floor(Math.random() * 26)];
-        })
+function startAnimation(repeat = true) {
+    clearInterval(animationIntervalId); // clear old one if running
+    clearTimeout(restartTimeoutId);     // clear any scheduled restart
+
+    let iterations = 0;
+
+    animationIntervalId = setInterval(() => {
+        h1Element.innerText = h1Element.innerText
+            .split("")
+            .map((letter, index) => {
+                if (index < iterations) {
+                    return h1Element.dataset.value[index];
+                }
+                return letters[Math.floor(Math.random() * 26)];
+            })
             .join("");
 
         if (iterations >= h1Element.dataset.value.length) {
             clearInterval(animationIntervalId);
-            restartTimeoutId = setTimeout(() => {
-                iterations = 0;
-                startAnimation();
-            }, 6000);
+            if (repeat) {
+                restartTimeoutId = setTimeout(() => {
+                    startAnimation(true);
+                }, 6000);
+            }
         } else {
             iterations += 1 / 3;
         }
     }, 30);
 }
 
-startAnimation();
+startAnimation(true);
 
