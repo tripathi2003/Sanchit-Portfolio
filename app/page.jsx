@@ -43,6 +43,6 @@ export default function Home() {
     <footer>
       <span>MADE BY SUMIT TRIPATHI</span>
     </footer>
-    </>
+    </> 
   );
 }
